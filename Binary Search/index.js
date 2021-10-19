@@ -26,10 +26,17 @@ function binarySearch(arr, l, r, x) {
   return -1;
 }
 
-let arr = [2, 3, 4, 10, 40];
+//sample array and elements
+let arr = [2, 3, 4, 10, 40]; // annother eay to declare arrray --> arr = new Array(2, 3, 4, 10, 40);
 let x = 10;
 let n = arr.length;
+
+//pass in the array,
+//0 to signify the first index element,
+//n - 1 to signfy last element in array, and the searched element (x)
 let result = binarySearch(arr, 0, n - 1, x);
 result == -1
   ? document.write('Element is not present in array')
   : document.write('Element is present at index ' + result);
+
+console.log(result);
