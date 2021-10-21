@@ -6,7 +6,7 @@
 //in other words: we jumped around the array, take a step back once we pass the value
 //we are looking for, and do a linear search
 
-//the best step size is m = √n --> n = the size of the array, m = how many blocks we jump
+//the best step size is m = √n --> n = the length of the array, m = how many blocks we jump
 
 function jumpSearch(arr, x, n) {
   // Finding block size to be jumped (square root of n)
@@ -46,3 +46,5 @@ let index = jumpSearch(arr, x, n);
 
 // Print the index where 'x' is located
 document.write(`Number ${x} is at index ${index}`);
+
+//Jump Search takes O(√ n) time

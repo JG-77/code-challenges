@@ -94,3 +94,5 @@ let search_element = 4;
 
 // Function call
 search(arra, search_element);
+
+//Linear Search finds the element in O(n) time

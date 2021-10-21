@@ -40,3 +40,5 @@ result == -1
   : document.write('Element is present at index ' + result);
 
 console.log(result);
+
+//Binary Search take O(Log n) time
