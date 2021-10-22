@@ -26,4 +26,23 @@ function binarySearch(arr, l, r, x) {
   return -1;
 }
 
-// --------------------------Exponential search below------------------------------
+// Returns position of first occurrence of x in array
+function exponentialSearch(arr, n, x) {
+  // If x is present at first location itself
+  if (arr[0] == x) return 0;
+
+  // Find range for binary search by repeated doubling
+  let i = 1;
+  while (i < n && arr[i] <= x) i = i * 2;
+
+  // Call binary search for the found range.
+  return binarySearch(arr, i / 2, Math.min(i, n - 1), x);
+}
+
+// Driver Code
+let arr = [2, 3, 4, 10, 40];
+let n = arr.length;
+let x = 10;
+let result = exponentialSearch(arr, n, x);
+if (result == -1) document.write('Element is not present in array');
+else document.write('Element is present at index ' + result);
