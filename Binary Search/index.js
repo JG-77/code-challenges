@@ -9,7 +9,7 @@ Repeatedly check until the value is found or the interval is empty. */
 function binarySearch(arr, l, r, x) {
   if (r >= l) {
     // find the middle element in the array
-    let mid = l + Math.floor((r - l) / 2);
+    let mid = l + Math.floor((r - l) / 2); // takes first and last element to determine mid
 
     // If the element is present at the middle, return the middle index
     if (arr[mid] == x) return mid;

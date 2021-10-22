@@ -51,3 +51,10 @@ if (index != -1) {
 } else {
   document.write('Element not found');
 }
+
+//time complexity is O(log (log n))
+
+// https://towardsdatascience.com/understanding-time-complexity-with-python-examples-2bda6e8158a7
+
+//Interpolation Search is an improvement over Binary Search for instances,
+//where the values in a sorted array are uniformly distributed
